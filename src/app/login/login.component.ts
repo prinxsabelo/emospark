@@ -16,7 +16,7 @@ export class LoginComponent {
 
   public progressLoader: boolean = true;
   public loginForm = new FormGroup({
-    user_name: new FormControl(''),
+    user_name: new FormControl('', [Validators.required]),
   });
   show: boolean = false;
 
