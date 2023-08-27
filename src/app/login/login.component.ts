@@ -28,11 +28,13 @@ export class LoginComponent {
   }
 
   onSubmit() {
-    this.loader = true;
-    setTimeout(() => {
-      const userName: any = this.loginForm.value.user_name;
-      localStorage.setItem('em_user_name', userName);
-      this.router.navigate(['/emotion']);
-    }, 1000);
+    if (this.loginForm.status === 'VALID') {
+      this.loader = true;
+      setTimeout(() => {
+        const userName: any = this.loginForm.value.user_name;
+        localStorage.setItem('em_user_name', userName);
+        this.router.navigate(['/emotion']);
+      }, 1000);
+    }
   }
 }
