@@ -82,7 +82,7 @@ export class EmotionComponent {
       this.currentQuestion.imageUrl = `assets/category3/${randomIndex}.jpeg`;
     }
     if (this.currentQuestion.answer == 'Surprised') {
-      const randomIndex = Math.floor(Math.random() * 2) + 1;
+      const randomIndex = Math.floor(Math.random() * 1) + 1;
       this.currentQuestion.imageUrl = `assets/category4/${randomIndex}.jpeg`;
     }
     this.currentQuestion.selectedAnswer = undefined;
