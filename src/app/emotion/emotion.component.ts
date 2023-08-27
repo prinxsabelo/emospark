@@ -132,7 +132,7 @@ export class EmotionComponent {
 
       dialogRef = this.dialog.open(SuccessComponent, {
         width: '80%',
-        height: '80vh',
+        maxHeight: '50vh',
         panelClass: 'custom-dialog-class',
       });
 
