@@ -1,0 +1,14 @@
+::ng-deep .success {
+  background: #14574e !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  --mdc-snackbar-container-color: #14574e !important;
+}
+::ng-deep .error {
+  background: #ed4337;
+  color: #fff;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  --mdc-snackbar-container-color: #ed4337 !important;
+}

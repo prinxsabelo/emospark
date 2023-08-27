@@ -1,0 +1,32 @@
+<div class="flex h-screen w-screen items-center justify-center">
+  <form
+    *ngIf="!loader"
+    [formGroup]="loginForm"
+    class="flex flex-col space-x-1 space-y-1 shadow border p-4 w-11/12 lg:w-1/4"
+    (submit)="onSubmit()"
+  >
+    <div class="py-2 text-2xl font-bold tracking-wide">
+      Let Us Play Emotions
+    </div>
+    <div class="w-full">
+      <mat-form-field appearance="outline" class="w-full">
+        <mat-label>Let me know your name</mat-label>
+        <input matInput formControlName="user_name" placeholder="Enter name" />
+      </mat-form-field>
+      <div class="w-1/2">
+        <button
+          mat-button
+          type="submit"
+          mat-raised-button
+          color="primary"
+          class="font-bold uppercase tracking-wide w-full"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+  </form>
+  <div *ngIf="loader">
+    <mat-spinner color="primary"></mat-spinner>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+.blink-animation {
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  from {
+    background-color: transparent;
+  }
+  to {
+    @apply bg-green-200/* Change to the desired color */;
+  }
+}
+
+.custom-dialog-class {
+  max-width: 100%; /* Full width on all screens */
+
+  @media (min-width: 640px) {
+    max-width: 50%; /* Half width on screens with a minimum width of 640px */
+  }
+}
+
+.background-placeholder {
+  background-color: #f2f2f2; /* Set your desired placeholder color */
+}

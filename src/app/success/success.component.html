@@ -1,0 +1,18 @@
+<div class="relative">
+  <div class="flex items-center p-5 h-full">
+    <div class="w-1/2 text-4xl font-bold">Congratulations, {{ user_name }}</div>
+    <img src="assets/congrat.gif" class="w-36 h-36" />
+  </div>
+
+  <div class="p-5">
+    <button
+      mat-button
+      mat-raised-button
+      (click)="onDismiss()"
+      class="text-2xl"
+      color="primary"
+    >
+      Play Again
+    </button>
+  </div>
+</div>
