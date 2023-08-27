@@ -129,7 +129,7 @@ export class EmotionComponent {
     let cIndex: any = this.currentQuestionIndex + 1;
     if (cIndex == this.questions.length) {
       let dialogRef: any;
-      if (this.screenWidth < 800) {
+      if (this.screenWidth < 1000) {
         dialogRef = this.dialog.open(SuccessComponent, {
           width: '100%',
           height: '80vh',
