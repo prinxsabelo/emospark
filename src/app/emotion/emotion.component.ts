@@ -67,7 +67,7 @@ export class EmotionComponent {
       this.currentQuestion.answer == 'Happy' ||
       this.currentQuestion.answer == 'Excited'
     ) {
-      const randomIndex = Math.floor(Math.random() * 13) + 1;
+      const randomIndex = Math.floor(Math.random() * 11) + 1;
       this.currentQuestion.imageUrl = `assets/category1/${randomIndex}.jpeg`;
     }
     if (this.currentQuestion.answer == 'Sad') {
