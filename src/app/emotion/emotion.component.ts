@@ -71,7 +71,7 @@ export class EmotionComponent {
       this.currentQuestion.imageUrl = `assets/category1/${randomIndex}.jpeg`;
     }
     if (this.currentQuestion.answer == 'Sad') {
-      const randomIndex = Math.floor(Math.random() * 12) + 1;
+      const randomIndex = Math.floor(Math.random() * 8) + 1;
       this.currentQuestion.imageUrl = `assets/category2/${randomIndex}.jpeg`;
     }
     if (
@@ -129,19 +129,12 @@ export class EmotionComponent {
     let cIndex: any = this.currentQuestionIndex + 1;
     if (cIndex == this.questions.length) {
       let dialogRef: any;
-      if (this.screenWidth < 1000) {
-        dialogRef = this.dialog.open(SuccessComponent, {
-          width: '100%',
-          height: '80vh',
-          panelClass: 'custom-dialog-class',
-        });
-      } else {
-        dialogRef = this.dialog.open(SuccessComponent, {
-          width: '40%',
-          height: '80vh',
-          panelClass: 'custom-dialog-class',
-        });
-      }
+
+      dialogRef = this.dialog.open(SuccessComponent, {
+        width: '80%',
+        height: '80vh',
+        panelClass: 'custom-dialog-class',
+      });
 
       dialogRef.afterClosed().subscribe((dialogResult: any) => {
         this.onLoad();
