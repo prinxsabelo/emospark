@@ -114,8 +114,13 @@ export class EmotionComponent {
       });
       this.playSuccessSound();
     } else {
-      this.storeRepeatedQuestion(this.questions[questionIndex]);
+      this._snackBar.open('😓😓😓😓😔😔😓😓😓😔😓..', '', {
+        horizontalPosition: 'end',
+        verticalPosition: 'top',
+        duration: 2000,
+      });
       this.playErrorSound();
+      this.storeRepeatedQuestion(this.questions[questionIndex]);
     }
 
     // setTimeout(() => {
@@ -162,7 +167,7 @@ export class EmotionComponent {
       setTimeout(() => {
         audio.pause();
         audio.currentTime = 0; // Reset the audio time for next playback
-      }, 4000); //
+      }, 3000); //
     }
   }
 
@@ -174,7 +179,7 @@ export class EmotionComponent {
       setTimeout(() => {
         audio.pause();
         audio.currentTime = 0; // Reset the audio time for next playback
-      }, 4000); //
+      }, 3000); //
     }
   }
 
