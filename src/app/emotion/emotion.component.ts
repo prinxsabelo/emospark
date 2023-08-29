@@ -72,12 +72,12 @@ export class EmotionComponent {
         this.currentQuestion.answer == 'Excited'
       ) {
         const randomIndex = Math.floor(Math.random() * 11) + 1;
-        this.currentQuestion.imageUrl = `assets/category1/${randomIndex}}.jpeg`;
+        this.currentQuestion.imageUrl = `assets/category1/${randomIndex}.jpeg`;
         this.questions[index].imageUrl = this.currentQuestion.imageUrl;
       }
       if (this.currentQuestion.answer == 'Sad') {
         const randomIndex = Math.floor(Math.random() * 8) + 1;
-        this.currentQuestion.imageUrl = `assets/category2/${randomIndex}}.jpeg`;
+        this.currentQuestion.imageUrl = `assets/category2/${randomIndex}.jpeg`;
         this.questions[index].imageUrl = this.currentQuestion.imageUrl;
       }
       if (
@@ -85,12 +85,12 @@ export class EmotionComponent {
         this.currentQuestion.answer == 'Frustrated'
       ) {
         const randomIndex = Math.floor(Math.random() * 6) + 1;
-        this.currentQuestion.imageUrl = `assets/category3/${randomIndex}}.jpeg`;
+        this.currentQuestion.imageUrl = `assets/category3/${randomIndex}.jpeg`;
         this.questions[index].imageUrl = this.currentQuestion.imageUrl;
       }
       if (this.currentQuestion.answer == 'Surprised') {
         const randomIndex = Math.floor(Math.random() * 1) + 1;
-        this.currentQuestion.imageUrl = `assets/category4/${randomIndex}}.jpeg`;
+        this.currentQuestion.imageUrl = `assets/category4/${randomIndex}.jpeg`;
         this.questions[index].imageUrl = this.currentQuestion.imageUrl;
       }
     }
