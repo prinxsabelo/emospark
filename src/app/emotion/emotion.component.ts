@@ -66,7 +66,7 @@ export class EmotionComponent {
 
     let q_no = data.q_no;
     let index = this.questions.findIndex((x: any) => x.q_no == q_no);
-    if (this.currentQuestion.imageUrl === undefined) {
+    if (this.currentQuestion.imageUrl === '') {
       if (
         this.currentQuestion.answer == 'Happy' ||
         this.currentQuestion.answer == 'Excited'
