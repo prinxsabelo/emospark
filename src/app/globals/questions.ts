@@ -10,6 +10,7 @@ export const questions = [
     ],
     answer: 'Happy',
     selectedAnswer: undefined,
+    imageUrl: '',
   },
   {
     q_no: 2,
@@ -22,6 +23,7 @@ export const questions = [
     ],
     answer: 'Sad',
     selectedAnswer: undefined,
+    imageUrl: '',
   },
 
   {
@@ -35,6 +37,7 @@ export const questions = [
     ],
     answer: 'Confused',
     selectedAnswer: undefined,
+    imageUrl: '',
   },
   {
     q_no: 4,
@@ -47,6 +50,7 @@ export const questions = [
     ],
     answer: 'Confused',
     selectedAnswer: undefined,
+    imageUrl: '',
   },
   {
     q_no: 5,
@@ -58,6 +62,7 @@ export const questions = [
     ],
     answer: 'Happy',
     selectedAnswer: undefined,
+    imageUrl: '',
   },
   {
     q_no: 6,
@@ -69,6 +74,7 @@ export const questions = [
     ],
     answer: 'Happy',
     selectedAnswer: undefined,
+    imageUrl: '',
   },
   {
     q_no: 7,
@@ -80,6 +86,7 @@ export const questions = [
     ],
     answer: 'Happy',
     selectedAnswer: undefined,
+    imageUrl: '',
   },
   {
     q_no: 8,
@@ -91,6 +98,7 @@ export const questions = [
     ],
     answer: 'Surprised',
     selectedAnswer: undefined,
+    imageUrl: '',
   },
   {
     q_no: 9,
@@ -102,6 +110,7 @@ export const questions = [
     ],
     answer: 'Sad',
     selectedAnswer: undefined,
+    imageUrl: '',
   },
   {
     q_no: 10,
@@ -114,6 +123,7 @@ export const questions = [
     ],
     answer: 'Confused',
     selectedAnswer: undefined,
+    imageUrl: '',
   },
   {
     q_no: 11,
@@ -125,6 +135,7 @@ export const questions = [
     ],
     answer: 'Sad',
     selectedAnswer: undefined,
+    imageUrl: '',
   },
   {
     q_no: 12,
@@ -137,6 +148,7 @@ export const questions = [
     ],
     answer: 'Confused',
     selectedAnswer: undefined,
+    imageUrl: '',
   },
   {
     q_no: 13,
@@ -148,6 +160,7 @@ export const questions = [
     ],
     answer: 'Sad',
     selectedAnswer: undefined,
+    imageUrl: '',
   },
   {
     q_no: 14,
@@ -160,6 +173,7 @@ export const questions = [
     ],
     answer: 'Frustrated',
     selectedAnswer: undefined,
+    imageUrl: '',
   },
   {
     q_no: 15,
@@ -171,6 +185,7 @@ export const questions = [
     ],
     answer: 'Sad',
     selectedAnswer: undefined,
+    imageUrl: '',
   },
   {
     q_no: 16,
@@ -183,6 +198,7 @@ export const questions = [
     ],
     answer: 'Frustrated',
     selectedAnswer: undefined,
+    imageUrl: '',
   },
   {
     q_no: 17,
@@ -195,6 +211,7 @@ export const questions = [
     ],
     answer: 'Confused',
     selectedAnswer: undefined,
+    imageUrl: '',
   },
   {
     q_no: 18,
@@ -206,5 +223,6 @@ export const questions = [
     ],
     answer: 'Sad',
     selectedAnswer: undefined,
+    imageUrl: '',
   },
 ];
