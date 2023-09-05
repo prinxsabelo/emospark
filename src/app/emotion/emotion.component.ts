@@ -51,7 +51,7 @@ export class EmotionComponent {
       localStorage.removeItem('repeatedQuestions');
 
       // this.questions = this.shuffleArray(questions).slice(0, 10);
-      this.questions = (questions)
+      this.questions = questions.slice(0, 3);
 
       this.currentQuestionIndex = 0;
       this.setCurrentQuestion(this.questions[this.currentQuestionIndex]);
